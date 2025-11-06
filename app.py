@@ -40,10 +40,10 @@ if not api_key:
 #     os.makedirs(db_dir)
 
 # Download the database file if it doesn't exist
-if not os.path.exists(db_path):
-    with st.spinner(f"Downloading database from {db_url}..."):
-        urllib.request.urlretrieve(db_url, db_path)
-    st.success("Database downloaded.")
+# if not os.path.exists(db_path):
+#     with st.spinner(f"Downloading database from {db_url}..."):
+#         urllib.request.urlretrieve(db_url, db_path)
+#     st.success("Database downloaded.")
 
 # Connect to the database
 # conn = sqlite3.connect(db_path, check_same_thread=False)
