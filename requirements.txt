@@ -1,0 +1,7 @@
+langchian
+langsmith
+streamlit
+langhraph
+google-generative-ai
+python-dotenv
+sqlite3
