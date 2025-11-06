@@ -1,4 +1,4 @@
-langchian
+langchain
 langsmith
 streamlit
 langhraph
