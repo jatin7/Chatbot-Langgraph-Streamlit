@@ -1,23 +1,22 @@
 import streamlit as st
 import uuid
 import os
-import sqlite3
 import urllib.request
 from dotenv import load_dotenv
 
 from typing import Literal
 from langchain_core.messages import HumanMessage, SystemMessage, RemoveMessage, AIMessage
 from langgraph.graph import MessagesState, StateGraph, START, END
-from langgraph.checkpoint.sqlite import MemoorySaver
+from langgraph.checkpoint.memory import MemorySaver
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 # --- 1. Page Configuration ---
 st.set_page_config(
-    page_title="My Chatbot (with SQLite)",
+    page_title="My Chatbot (with MemorySaver)",
     page_icon="🤖",
     layout="wide"
 )
-st.title("🤖 My Chatbot (with SQLite Memory)")
+st.title("🤖 My Chatbot (with MemorySaver)")
 
 # --- 2. Load Environment Variables ---
 # Make sure you have a .env file in this directory
